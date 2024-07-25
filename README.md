@@ -3,6 +3,9 @@ Christian Greek Orthodox web media app (using vlc)
 
 ![app](./image.png)
 
+### Required
+`vlc`
+
 ### Installation
 ```
 mkdir -p /usr/share/{orthodox_web-media,applications}
