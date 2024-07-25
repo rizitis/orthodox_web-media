@@ -20,7 +20,7 @@ class WebTVRadioApp(QMainWindow):
 
     def init_buttons(self):
         icons_and_urls = {
-            "/usr/share/peir.png": "https://impradio2.bytemasters.gr/8002/stream",
+            "/usr/share/orthodox_web-media/peir.png": "https://impradio2.bytemasters.gr/8002/stream",
             "/usr/share/orthodox_web-media/pem_fm.png": "https://stream.radiojar.com/48cz219puzzuv",
             "/usr/share/orthodox_web-media/imllogo.png": "http://194.154.128.242:9090/stream.mp3",
             "/usr/share/orthodox_web-media/chania.png": "https://sc2.streamwithq.com:2000/stream/martiria",
