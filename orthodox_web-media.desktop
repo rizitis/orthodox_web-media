@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=orthodox_web-media
-Exec=python3 /opt/orthodox_media.py
-Icon=/usr/share/orthodox_web-media/church_easter_icon.png
-Type=Application
-Categories=Internet;
-Terminal=false
