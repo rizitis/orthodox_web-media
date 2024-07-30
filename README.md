@@ -1,4 +1,4 @@
-## Rewrite from scrtach everything.<br>
+## Rewrite from scratch everything.<br>
 *Old version look for in [branches](https://github.com/rizitis/orthodox_web-media/branches) or download [2024.7.1](https://github.com/rizitis/orthodox_web-media/releases)*<br>
 Now we have only 2 new files here for testing, vlc1.py and mpv1.py <br> one use vlc and other mpv as media players.  
  <p>
