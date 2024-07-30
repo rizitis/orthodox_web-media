@@ -15,7 +15,7 @@ Now we have only 2 new files here for testing, vlc1.py and mpv1.py <br> one use 
  
  
  
- 
+ ![](./testing.png)
  
  
  
