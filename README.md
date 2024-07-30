@@ -5,7 +5,9 @@ Now we have only 2 new files here for testing, vlc1.py and mpv1.py <br> one use 
  
  How to use/test it:
  ```
- python3 vlc1.py or mpv1.py
+ python3 vlc1.py
+or
+ python3 mpv1.py
  ```
  
  If you feel brave command: `python3 vlc1.py & disown -a && exit`
