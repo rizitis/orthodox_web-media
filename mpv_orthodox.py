@@ -1,7 +1,7 @@
 import sys
 import subprocess
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QMessageBox, QFileDialog
-from PyQt5.QtGui import QDesktopServices  # Import QDesktopServices from PyQt5.QtGui
+from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
 
 # Ορισμός των ραδιοσταθμών και των αντίστοιχων URLs
@@ -117,9 +117,8 @@ class RadioApp(QWidget):
             QMessageBox.critical(self, "Error", f"Failed to open website: {e}")
 
     def closeEvent(self, event):
-        for process in self.mpv_processes:
-            process.terminate()
-        super().closeEvent(event)
+        self.hide()  # Hide the window instead of closing it
+        event.ignore()  # Ignore the close event so the window remains hidden
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
