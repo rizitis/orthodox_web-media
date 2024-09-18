@@ -15,6 +15,7 @@ radio_stations = {
     'Radio: Ι. Μητρ. Πατρών': 'http://eco.onestreaming.com:8468/1fbbecaa-3eaa-11e9-aa55-52543be04c81',
     'Radio: Ορθοδοξία και Παράδοση': 'http://radio.lts-group.eu:52390/ANS',
     'TV: 3E': 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
+    'EcclesiaTV': 'https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8',
     # Add more ...using same format.
 }
 
@@ -125,4 +126,3 @@ if __name__ == '__main__':
     ex = RadioApp()
     ex.show()
     sys.exit(app.exec_())
-
