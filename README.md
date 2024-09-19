@@ -4,6 +4,8 @@ Supported media players:
 2. mpv
 3. vlc
 
+![menu](./testing.png)
+
 ### requires:
 1. Python3
 2. Totem or mpv or vlc
