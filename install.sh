@@ -22,7 +22,7 @@ wget -qc https://github.com/rizitis/"$PRGNAM"/archive/refs/tags/"$VERSION".tar.g
 
 # Unpack source
 echo "Extracting source code"
-tar -xvzf "$PRGNAM"-"$VERSION".tar.gz
+tar -xvzf "$VERSION".tar.gz
 
 # Navigate to source directory
 cd "$PRGNAM"-"$VERSION" || exit 1
