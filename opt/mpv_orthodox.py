@@ -20,7 +20,7 @@ radio_stations = {
 }
 
 sites = {
-    'Site pemptousia.tv': 'https://www.pemptousia.tv/lang/el_GR',
+    'Site: pemptousia.tv': 'https://www.pemptousia.tv/lang/el_GR',
 }
 
 class RadioApp(QWidget):
@@ -79,9 +79,9 @@ class RadioApp(QWidget):
             central_layout.addWidget(button)
 
         # Προσθήκη κουμπιού για την ιστοσελίδα
-        website_button = QPushButton('Site pemptousia.tv', self)
+        website_button = QPushButton('Site: pemptousia.tv', self)
         website_button.setFixedSize(300, 50)
-        website_button.clicked.connect(lambda: self.open_website(sites['Site pemptousia.tv']))
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: pemptousia.tv']))
         central_layout.addWidget(website_button)
 
         video_button = QPushButton('Play Local Files', self)
