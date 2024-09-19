@@ -16,6 +16,7 @@ pip install PyQt5
 ```
 
 ### Installation
-
-
-*For the old version look for it in [branches](https://github.com/rizitis/orthodox_web-media/branches) or download [2024.7.1](https://github.com/rizitis/orthodox_web-media/releases)*<br>
+Copy paste in your terminal following command and hit enter.
+```
+wget -q --show-progress -c https://raw.githubusercontent.com/rizitis/orthodox_web-media/main/install.sh && chmod +x install.sh && sudo ./install.sh
+```
