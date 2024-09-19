@@ -3,7 +3,7 @@
 # Set up working environment
 cd "$(dirname "$0")" || exit 1
 CWD=$(pwd)
-VERSION="2024.9.19"
+VERSION="2024.9.20"
 PRGNAM="orthodox_web-media"
 BUILD_DIR="orthodox_build"
 
