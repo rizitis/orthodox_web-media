@@ -28,7 +28,7 @@ tar -xvzf "$VERSION".tar.gz
 cd "$PRGNAM"-"$VERSION" || exit 1
 
 # List media players
-totem="totem-orthodox_media"
+totem="totem_orthodox"
 mpv="mpv_orthodox"
 vlc="vlc_orthodox"
 
@@ -52,8 +52,8 @@ done
 
 # Install the selected player
 echo "Installing $player..."
-sudo cp ./opt/"$player".py /opt/"$player".py
-sudo cp ./usr/share/applications/"$player".desktop /usr/share/applications/"$player".desktop
+sudo cat ./opt/"$player".py > /opt/"$player".py
+sudo cat ./usr/share/applications/"$player".desktop > /usr/share/applications/"$player".desktop
 sudo cp -r ./usr/share/"$PRGNAM" /usr/share/
 
 # Clean up working directory
