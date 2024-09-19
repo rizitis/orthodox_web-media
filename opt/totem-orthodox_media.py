@@ -30,7 +30,7 @@ class RadioApp(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('Μενού Ραδιοσταθμών')
+        self.setWindowTitle('Christian Orthodox web media')
         self.setGeometry(100, 100, 400, 300)
 
         # Κεντρική διάταξη
