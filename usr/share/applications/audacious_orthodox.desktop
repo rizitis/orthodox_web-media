@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=orthodox_web-media
-Exec=python3 /opt/vlc_orthodox.py
+Exec=python3 /opt/audacius_orthodox.py
 Icon=/usr/share/orthodox_web-media/church_easter_icon.png
 Type=Application
 Categories=Internet;

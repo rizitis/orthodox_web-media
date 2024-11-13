@@ -30,22 +30,25 @@ cd "$PRGNAM"-"$VERSION" || exit 1
 # List media players
 totem="totem_orthodox"
 mpv="mpv_orthodox"
-vlc="vlc_orthodox"
+QMPlay2="QMPlay2_orthodox"
+audacious="audacious_orthodox"
 
 # Prompt the user for media player choice
 echo "Choose your preferred media player:"
-echo "1. VLC"
+echo "1. QMPlay2"
 echo "2. MPV"
 echo "3. Totem"
+echo "4. Audacious"
 
 # Read and validate user input
 while true; do
-  read -p "Enter your choice (1-3): " choice
+  read -p "Enter your choice (1-4): " choice
   case $choice in
-    1) player="$vlc" ;;
+    1) player="$QMPlay2" ;;
     2) player="$mpv" ;;
     3) player="$totem" ;;
-    *) echo "Invalid choice. Please enter 1, 2, or 3." ;;
+    4) player="$audacious" ;;
+    *) echo "Invalid choice. Please enter 1, 2, ,3 or 4." ;;
   esac
   [[ $choice -ge 1 && $choice -le 3 ]] && break
 done

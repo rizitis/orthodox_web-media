@@ -2,7 +2,8 @@
 Supported media players:
 1. Totem
 2. mpv
-3. vlc
+3. QMPlay2
+4. Audacious
 
 ![menu](./testing.png)
 
@@ -11,7 +12,7 @@ Supported media players:
 2. Totem or mpv or vlc
 
 #### Python3 requitments:
-```
+```![](../../../../tmp/ghostwriter-unWCtv/testing.png)
 pip install PyQt5
 ```
 
