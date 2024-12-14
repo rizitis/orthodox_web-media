@@ -6,21 +6,24 @@ from PyQt5.QtCore import QUrl
 
 # Ορισμός των ραδιοσταθμών και των αντίστοιχων URLs
 radio_stations = {
-    'Radio PemptousiaFM': 'https://stream.radiojar.com/48cz219puzzuv',
-    'Radio Μοναχική Διακονία': 'http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true',
-    'Radio Church of Piraeus': 'https://impradio2.bytemasters.gr/8002/stream',
-    'Radio Ι.Μ.Λεμεσού Κύπρος': 'http://194.154.128.242:9090/stream.mp3',
-    'Radio Μαρτυρία Χανιά': 'https://sc2.streamwithq.com:2000/stream/martiria',
-    'Radio Ιερα Μητρ. Χαλκίδος': 'http://65.108.133.10:8036/stream',
-    'Radio Ι. Μητρ. Πατρών': 'http://eco.onestreaming.com:8468/1fbbecaa-3eaa-11e9-aa55-52543be04c81',
-    'Radio Ορθοδοξία και Παράδοση': 'http://radio.lts-group.eu:52390/ANS',
-    'TV 3E': 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
+    'Radio: PemptousiaFM': 'https://stream.radiojar.com/48cz219puzzuv',
+    'Radio: Μοναχική Διακονία': 'http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true',
+    'Radio: Church of Piraeus': 'https://impradio2.bytemasters.gr/8002/stream',
+    'Radio: Ι.Μ.Λεμεσού Κύπρος': 'http://194.154.128.242:9090/stream.mp3',
+    'Radio: Μαρτυρία Χανιά': 'https://sc2.streamwithq.com:2000/stream/martiria',
+    'Radio: Ιερα Μητρ. Χαλκίδος': 'http://65.108.133.10:8036/stream',
+    'Radio: Ι. Μητρ. Πατρών': 'http://eco.onestreaming.com:8468/1fbbecaa-3eaa-11e9-aa55-52543be04c81',
+    'Radio: Ορθοδοξία και Παράδοση': 'http://radio.lts-group.eu:52390/ANS',
+    'TV: 3E': 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
     'EcclesiaTV': 'https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8',
+    'PemptousiaTV': 'https://new.cache-stream.workers.dev/stream/UCYjyS5OIpeVoOoXRxpzaKDg/live.m3u8',
     # Add more ...using same format.
 }
 
 sites = {
-    'Site: pemptousia.tv': 'https://www.pemptousia.tv/lang/el_GR',
+    'Site: Pemptousia': 'https://www.pemptousia.gr',
+    'Site: Orthodox News': 'https://www.orthodoxianewsagency.gr',
+    'Site: ST. MAXIM THE GREEK INSTITUTE ': 'https://www.stmaximthegreek.org',
 }
 
 class RadioApp(QWidget):
@@ -79,9 +82,17 @@ class RadioApp(QWidget):
             central_layout.addWidget(button)
 
         # Προσθήκη κουμπιού για την ιστοσελίδα
-        website_button = QPushButton('Site: pemptousia.tv', self)
+        website_button = QPushButton('Site: Pemptousia', self)
         website_button.setFixedSize(300, 50)
-        website_button.clicked.connect(lambda: self.open_website(sites['Site: pemptousia.tv']))
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: Pemptousia']))
+        central_layout.addWidget(website_button)
+        website_button = QPushButton('Site: Orthodox News', self)
+        website_button.setFixedSize(300, 50)
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: Orthodox News']))
+        central_layout.addWidget(website_button)
+        website_button = QPushButton('Site: ST. MAXIM THE GREEK INSTITUTE', self)
+        website_button.setFixedSize(300, 50)
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: ST. MAXIM THE GREEK INSTITUTE']))
         central_layout.addWidget(website_button)
 
         video_button = QPushButton('Play Local Files', self)

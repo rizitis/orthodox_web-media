@@ -16,11 +16,14 @@ radio_stations = {
     'Radio: Ορθοδοξία και Παράδοση': 'http://radio.lts-group.eu:52390/ANS',
     'TV: 3E': 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
     'EcclesiaTV': 'https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8',
+    'PemptousiaTV': 'https://new.cache-stream.workers.dev/stream/UCYjyS5OIpeVoOoXRxpzaKDg/live.m3u8',
     # Add more ...using same format.
 }
 
 sites = {
-    'Site: pemptousia.tv': 'https://www.pemptousia.tv/lang/el_GR',
+    'Site: Pemptousia': 'https://www.pemptousia.gr',
+    'Site: Orthodox News': 'https://www.orthodoxianewsagency.gr',
+    'Site: ST. MAXIM THE GREEK INSTITUTE ': 'https://www.stmaximthegreek.org',
 }
 
 class RadioApp(QWidget):
@@ -79,9 +82,17 @@ class RadioApp(QWidget):
             central_layout.addWidget(button)
 
         # Προσθήκη κουμπιού για την ιστοσελίδα
-        website_button = QPushButton('Site: pemptousia.tv', self)
+        website_button = QPushButton('Site: Pemptousia', self)
         website_button.setFixedSize(300, 50)
-        website_button.clicked.connect(lambda: self.open_website(sites['Site: pemptousia.tv']))
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: Pemptousia']))
+        central_layout.addWidget(website_button)
+        website_button = QPushButton('Site: Orthodox News', self)
+        website_button.setFixedSize(300, 50)
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: Orthodox News']))
+        central_layout.addWidget(website_button)
+        website_button = QPushButton('Site: ST. MAXIM THE GREEK INSTITUTE', self)
+        website_button.setFixedSize(300, 50)
+        website_button.clicked.connect(lambda: self.open_website(sites['Site: ST. MAXIM THE GREEK INSTITUTE']))
         central_layout.addWidget(website_button)
 
         video_button = QPushButton('Play Local Files', self)
