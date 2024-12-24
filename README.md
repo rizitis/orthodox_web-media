@@ -9,7 +9,7 @@ Supported media players:
 
 ### requires:
 1. Python3
-2. Totem or mpv or vlc
+2. Totem or mpv or vlc or QMPlay2
 
 #### Python3 requitments:
 ```![](../../../../tmp/ghostwriter-unWCtv/testing.png)
