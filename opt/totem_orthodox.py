@@ -14,6 +14,7 @@ radio_stations = {
     'Radio: Ιερα Μητρ. Χαλκίδος': 'http://65.108.133.10:8036/stream',
     'Radio: Ι. Μητρ. Πατρών': 'http://eco.onestreaming.com:8468/1fbbecaa-3eaa-11e9-aa55-52543be04c81',
     'Radio: Ορθοδοξία και Παράδοση': 'http://radio.lts-group.eu:52390/ANS',
+    'Terirem Radio': 'https://c34.radioboss.fm:18213/stream',
     'TV: 3E': 'http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8',
     'EcclesiaTV': 'https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8',
     'PemptousiaTV': 'https://new.cache-stream.workers.dev/stream/UCYjyS5OIpeVoOoXRxpzaKDg/live.m3u8',
